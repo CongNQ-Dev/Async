@@ -6,7 +6,7 @@ let validator = {
       errEl.innerText = "";
       return true;
     } else {
-      errEl.innerText = "Trường này phải điền số";
+      errEl.innerText = "Your input must be an number";
       return false;
     }
   },
@@ -18,7 +18,7 @@ let validator = {
       errEl.innerText = "";
       return true;
     } else {
-      errEl.innerText = "Trường này phải điền chữ";
+      errEl.innerText = "Your input must be characters";
       return false;
     }
   },
@@ -27,11 +27,11 @@ let validator = {
 
     let length = value.trim().length;
     if (length < 5) {
-      errEl.innerText = "Độ dài tối thiểu phải  lớn hơn 5";
+      errEl.innerText = "Max length must be greater than 5";
       return false;
     }
     if (length > 15) {
-      errEl.innerText = "Độ dài tối đa phải  bé hơn 15";
+      errEl.innerText = "Minimum length must be less than 15 ";
       return false;
     }
     errEl.innerText = "";
